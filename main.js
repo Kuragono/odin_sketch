@@ -5,9 +5,10 @@ function addDiv(amount, size) {
         newDiv.style.height = `${size}px`;
         newDiv.style.width = `${size}px`;
         document.body.querySelector('.main').appendChild(newDiv);
-        for (let j = 0; j <= amount-1; j++) {
+        for (let j = 0; j <= amount - 1; j++) {
             let newDiv = document.createElement('div');
-            newDiv.className = 'squaredivv';
+            newDiv.className = `squaredivv`;
+            newDiv.id = `squaredivv${(j+1)+16*i}`;
             newDiv.style.height = `${size}px`;
             newDiv.style.width = `${size}px`;
             document.body.querySelectorAll('.squaredivh')[i].appendChild(newDiv);
@@ -20,4 +21,10 @@ function addDiv(amount, size) {
     // document.body.querySelector('.main').appendChild(newGrid);
 }
 
+function mouseOver(element) {
+    element.style.backgroundColor = 'black';
+}
+
 addDiv(16, 25);
+
+document.querySelectorAll('[id^=squaredivv]').addEventListener('mouseover', mouseOver(document.querySelectorAll('[id^=squaredivv]')));

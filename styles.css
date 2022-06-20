@@ -1,4 +1,5 @@
 .main {
+    text-align: center;
     display: flex;
     flex-direction: column;
 }
@@ -7,9 +8,9 @@
     flex-shrink: 0;
 }
 
-.squaredivh:hover, .squaredivv:hover {
+/* .squaredivv:hover {
     background-color: black;
-}
+} */
 
 .squaredivv {
     border: 1px solid black;
@@ -18,6 +19,10 @@
 .squaredivh {
     display: flex;
     flex-direction: row;
+}
+
+.squarebackground {
+    background-color: black;
 }
 
 /* .grid {
