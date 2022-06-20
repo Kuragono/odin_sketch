@@ -1,0 +1,28 @@
+.main {
+    display: flex;
+    flex-direction: column;
+}
+
+.squaredivh, .squaredivv {
+    flex-shrink: 0;
+}
+
+.squaredivh:hover, .squaredivv:hover {
+    background-color: black;
+}
+
+.squaredivv {
+    border: 1px solid black;
+}
+
+.squaredivh {
+    display: flex;
+    flex-direction: row;
+}
+
+/* .grid {
+    display: grid;
+    border: 1px solid black;
+    grid-template-columns: repeat(25,1fr);
+    grid-template-rows: repeat(25,1fr);
+} */
