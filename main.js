@@ -22,3 +22,8 @@ $(".main").on('mouseenter', '.squaredivv', function() {
         $(this).addClass('hover');
     }
 );
+
+$("body").on('click', '.refresh', function() {
+    $('.squaredivv').removeClass('hover');
+    }
+);
