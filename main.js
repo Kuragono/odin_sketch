@@ -14,17 +14,11 @@ function addDiv(amount, size) {
             document.body.querySelectorAll('.squaredivh')[i].appendChild(newDiv);
         }
     }
-    // let newGrid = document.createElement('div');
-    // newGrid.className = 'grid';
-    // newGrid.style.height = `${size*amount}px`;
-    // newGrid.style.width = `${size*amount}px`;
-    // document.body.querySelector('.main').appendChild(newGrid);
-}
-
-function mouseOver(element) {
-    element.style.backgroundColor = 'black';
 }
 
 addDiv(16, 25);
 
-document.querySelectorAll('[id^=squaredivv]').addEventListener('mouseover', mouseOver(document.querySelectorAll('[id^=squaredivv]')));
+$(".main").on('mouseenter', '.squaredivv', function() {
+        $(this).addClass('hover');
+    }
+);
