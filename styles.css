@@ -1,5 +1,5 @@
 body {
-    background-color: bisque;
+    background-color: darkgray;
 }
 
 .main {
@@ -7,14 +7,11 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    width: 640px;
 }
 
 .squaredivh, .squaredivv {
     flex-shrink: 0;
-}
-
-.squaredivv {
-    border: 1px solid black;
 }
 
 .squaredivh {
