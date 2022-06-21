@@ -27,10 +27,12 @@ function sliderBarValue() {
 }
 
 // adds hover class to the grid squares
-$('.main').on('mouseenter', '.squaredivv', function() {
-        $(this).addClass('hover');
-    }
-);
+$('.main').on('click', function() {
+    $('.main').on('mouseenter', '.squaredivv', function() {
+            $(this).addClass('hover');
+        }
+    );
+});
 
 // refreshes the grid when the refresh button is clicked
 $('body').on('click', '.refresh', function() {
