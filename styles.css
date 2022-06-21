@@ -1,7 +1,12 @@
+body {
+    background-color: bisque;
+}
+
 .main {
     text-align: center;
     display: flex;
     flex-direction: column;
+    background-color: white;
 }
 
 .squaredivh, .squaredivv {

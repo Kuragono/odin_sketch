@@ -4,15 +4,15 @@ function createGrid(amount) {
     for (let i = 0; i <= amount-1; i++) {
         let newDiv = document.createElement('div');
         newDiv.className = 'squaredivh';
-        newDiv.style.height = `${(GRID_SIZE/amount)-2}px`;
-        newDiv.style.width = `${(GRID_SIZE/amount)-2}px`;
+        newDiv.style.height = `${(GRID_SIZE/amount)}px`;
+        newDiv.style.width = `${(GRID_SIZE/amount)}px`;
         document.body.querySelector('.main').appendChild(newDiv);
         for (let j = 0; j <= amount - 1; j++) {
             let newDiv = document.createElement('div');
             newDiv.className = `squaredivv`;
             newDiv.id = `squaredivv${(j+1)+16*i}`;
-            newDiv.style.height = `${(GRID_SIZE/amount)-2}px`;
-            newDiv.style.width = `${(GRID_SIZE/amount)-2}px`;
+            newDiv.style.height = `${(GRID_SIZE/amount)}px`;
+            newDiv.style.width = `${(GRID_SIZE/amount)}px`;
             document.body.querySelectorAll('.squaredivh')[i].appendChild(newDiv);
         }
     }
@@ -38,9 +38,10 @@ $('body').on('click', '.refresh', function() {
     }
 );
 
-// calls sliderBarValue() when the slider is changed
-$('.slidercontainer').on('mousedown', '#sliderRange', function() {
-    console.log(success);    
+// deletes old grid and calls sliderBarValue() when the slider is changed
+$('#sliderRange').on('click', function() {
+    $('.squardivv').remove();
+    $('.squaredivh').remove();
     sliderBarValue();
     }
 );
