@@ -8,10 +8,6 @@
     flex-shrink: 0;
 }
 
-/* .squaredivv:hover {
-    background-color: black;
-} */
-
 .squaredivv {
     border: 1px solid black;
 }
@@ -21,21 +17,20 @@
     flex-direction: row;
 }
 
-.squarebackground {
-    background-color: black;
-}
-
-/* .grid {
-    display: grid;
-    border: 1px solid black;
-    grid-template-columns: repeat(25,1fr);
-    grid-template-rows: repeat(25,1fr);
-} */
-
 .hover {
     background-color: black;
 }
 
+.userinputs {
+    display: flex;
+    gap: 30px;
+}
+
 .refresh {
+    margin-top: 20px;
+}
+
+.slider {
+    width: 300px;
     margin-top: 20px;
 }
